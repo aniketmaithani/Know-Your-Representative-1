@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter your name"
+        android:ems="10"
+        android:id="@+id/edtName"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Enter name of MP"
+        android:id="@+id/edtMP"
+        android:layout_below="@+id/edtName"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="Enter your phone no."
+        android:id="@+id/edtPhone"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/edtMP"
+        android:layout_alignStart="@+id/edtMP"
+        android:layout_below="@+id/edtMP"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:id="@+id/buttonImg"
+        android:layout_below="@+id/edtPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Latitude"
+        android:layout_below="@+id/buttonImg"
+        android:id="@+id/edtLat"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Longitude"
+        android:id="@+id/edtLong"
+        android:layout_alignTop="@+id/edtLat"
+        android:layout_toRightOf="@+id/buttonImg"
+        android:layout_toEndOf="@+id/buttonImg"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edtDesc"
+        android:hint="Enter Description"
+        android:layout_below="@+id/edtLat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDesc"
+        android:layout_marginTop="50sp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"/>
+</RelativeLayout>
